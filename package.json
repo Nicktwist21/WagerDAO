@@ -1,0 +1,27 @@
+{
+  "name": "wagerdao",
+  "version": "1.0.0",
+  "description": "The world's first exclusive sports betting DAO launched on the XRPL network!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicktwist21/WagerDAO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicktwist21/WagerDAO/issues"
+  },
+  "homepage": "https://github.com/Nicktwist21/WagerDAO#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0"
+  }
+}
