@@ -12,6 +12,16 @@ contract WagerNFT is ERC1155, AccessControl, Pausable, ERC1155Burnable, ERC1155S
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
+    // Global Variables
+    //State = presale/public
+    uint8[] public state = [0, 1];
+    
+    // Constants
+
+    // Mappings
+
+
+    // Modifiers
     constructor() ERC1155("") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(URI_SETTER_ROLE, msg.sender);
@@ -37,6 +47,7 @@ contract WagerNFT is ERC1155, AccessControl, Pausable, ERC1155Burnable, ERC1155S
     {
         _mint(account, id, amount, data);
     }
+
 
     function mintBatch(address to, uint256[] memory ids, uint256[] memory amounts, bytes memory data)
         public
