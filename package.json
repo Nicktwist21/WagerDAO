@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.0",
+    "oddslib": "^2.1.1",
     "xrpl": "^2.6.0",
     "xumm-sdk": "^1.6.2"
   }
